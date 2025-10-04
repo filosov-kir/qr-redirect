@@ -7,40 +7,42 @@
   <style>
     body {
       margin: 0;
-      padding: 40px 10px;
-      background: #fafafa;
+      padding: 10px; /* уменьшили поля */
+      background: linear-gradient(135deg, #ff5ecd, #9b00ff); /* ярко-розово-фиолетовый фон */
       font-family: system-ui, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 15px; /* уменьшили промежутки между элементами */
     }
     h1 {
-      font-size: 24px;
+      font-size: 22px; /* чуть меньше */
       font-weight: 600;
-      color: #333;
-      margin-bottom: 20px;
+      color: white; /* белый заголовок */
+      margin: 10px 0; /* минимальные отступы */
+      text-align: center;
     }
     img {
-      max-width: 100%;
+      max-width: 95%; /* чуть меньше отступов от краев */
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* тень стала чуть ярче */
     }
     footer {
-      color: #777;
+      color: #fff;
       font-size: 14px;
-      margin-top: 40px;
+      margin-top: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h1>Пошаговая инструкция</h1>
+  <h1>Пошаговая инструкция по сборке подарочной коробочки:</h1>
 
   <!-- Пример вставки изображений -->
   <img src="img.jpg" alt="В картинках">
-  <img src="gif.mp4" alt="В GIF-анимации">
+  <img src="gif.gif" alt="В GIF-анимации">
 
   <footer>darii - твоя инструкция</footer>
 </body>
