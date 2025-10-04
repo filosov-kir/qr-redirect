@@ -15,6 +15,7 @@
       align-items: center;
       gap: 15px;
     }
+
     h1 {
       font-size: 22px;
       font-weight: 600;
@@ -22,19 +23,20 @@
       margin: 10px 0;
       text-align: center;
     }
-    img,
-    video {
+
+    img, video {
       max-width: 95%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      object-fit: cover; /* чтобы не искажалось */
       display: block;
+      object-fit: cover;
     }
+
     video {
-      aspect-ratio: 4 / 5; /* похожее соотношение сторон, как у вертикального фото */
-      background: #000; /* на случай, если видео не загрузится */
+      outline: none;
     }
+
     footer {
       color: #fff;
       font-size: 14px;
@@ -45,13 +47,11 @@
 </head>
 <body>
 
+  <img src="i1.png" alt="Пример изображения">
   <video autoplay loop muted playsinline>
     <source src="mp44.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео.
   </video>
-  
-  <img src="i1.png" alt="Шаг 1">
-
 
 
   <footer>darii — твоя инструкция</footer>
