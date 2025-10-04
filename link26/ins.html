@@ -7,26 +7,33 @@
   <style>
     body {
       margin: 0;
-      padding: 10px; /* уменьшили поля */
-      background: linear-gradient(135deg, #ff5ecd, #9b00ff); /* ярко-розово-фиолетовый фон */
+      padding: 10px;
+      background: linear-gradient(135deg, #ff5ecd, #9b00ff);
       font-family: system-ui, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px; /* уменьшили промежутки между элементами */
+      gap: 15px;
     }
     h1 {
-      font-size: 22px; /* чуть меньше */
+      font-size: 22px;
       font-weight: 600;
-      color: white; /* белый заголовок */
-      margin: 10px 0; /* минимальные отступы */
+      color: white;
+      margin: 10px 0;
       text-align: center;
     }
-    img {
-      max-width: 95%; /* чуть меньше отступов от краев */
+    img,
+    video {
+      max-width: 95%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* тень стала чуть ярче */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      object-fit: cover; /* чтобы не искажалось */
+      display: block;
+    }
+    video {
+      aspect-ratio: 4 / 5; /* похожее соотношение сторон, как у вертикального фото */
+      background: #000; /* на случай, если видео не загрузится */
     }
     footer {
       color: #fff;
@@ -38,17 +45,13 @@
 </head>
 <body>
 
-  <!-- Пример вставки изображений -->
-  
-<img src="i1.png" alt="В GIF-анимации">
+  <img src="i1.png" alt="Шаг 1">
 
-
-   <video autoplay loop muted playsinline>
+  <video autoplay loop muted playsinline>
     <source src="mp44.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео.
   </video>
 
-
-  <footer>darii - твоя инструкция</footer>
+  <footer>darii — твоя инструкция</footer>
 </body>
 </html>
