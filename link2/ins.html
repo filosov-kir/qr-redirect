@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инструкция</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      background: linear-gradient(135deg, #ff5ecd, #9b00ff);
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: white;
+      margin: 10px 0;
+      text-align: center;
+    }
+    img,
+    video {
+      max-width: 95%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      object-fit: cover; /* чтобы не искажалось */
+      display: block;
+    }
+    video {
+      aspect-ratio: 4 / 5; /* похожее соотношение сторон, как у вертикального фото */
+      background: #000; /* на случай, если видео не загрузится */
+    }
+    footer {
+      color: #fff;
+      font-size: 14px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay loop muted playsinline>
+    <source src="videohs.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+
+  <video autoplay loop muted playsinline>
+    <source src="videofc.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+  
+  <img src="a.png.png" alt="Собираем коробочку за 10 секунд">
+
+
+
+  <footer>darii — твоя инструкция</footer>
+</body>
+</html>
