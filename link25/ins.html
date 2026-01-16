@@ -22,15 +22,18 @@
       margin: 10px 0;
       text-align: center;
     }
-    img,
-    video {
-      max-width: 95%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      object-fit: cover; /* чтобы не искажалось */
-      display: block;
-    }
+    
+.responsive-img,
+.responsive-video {
+    width: 100%;       /* растягиваем под контейнер */
+    max-width: 600px;  /* ограничиваем макс. размер */
+    height: auto;      /* сохраняем пропорции */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: block;
+    margin: 0 auto;    /* центрируем */
+}
+
     video {
       aspect-ratio: 9 / 16; /* похожее соотношение сторон, как у вертикального фото */
       background: #000; /* на случай, если видео не загрузится */
@@ -74,6 +77,11 @@
 <a href="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr2-11.png?raw=true" target="_blank">
       <img src="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr2-11.png?raw=true" 
 </a>
+
+<a href="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr2-11.png?raw=true" target="_blank">
+    <img src="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr2-11.png?raw=true" 
+         alt="QR код" class="responsive-img">
+</a>  
         
 <a href="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr%202%20-%202.png?raw=true" target="_blank">
     <img src="https://github.com/filosov-kir/qr-redirect/blob/main/link11/qr%202%20-%202.png?raw=true" 
