@@ -39,27 +39,31 @@
       background: #000; /* на случай, если видео не загрузится */
     }
     footer {
-      color: #fff;
+      color: #5a5958;
       font-size: 14px;
       margin-top: 20px;
       text-align: center;
     }
-    
+
 .info-text {
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.4;
-  text-align: center;
-  max-width: 95%;
-  background: rgba(255,255,255,0.15);
-  padding: 12px 14px;
-  border-radius: 12px;
+    color: #5a5958;
+    max-width: 600px;      /* одинаковая максимальная ширина */
+    width: 100%;           /* растягивается под контейнер */
+    margin: 0 auto 20px;   /* центрирование и отступ снизу */
+    line-height: 1.5;      /* чтобы текст был читабельным */
+    text-align: center;    /* центрируем текст внутри */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
+
 .info-text a {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: underline;
-  word-break: break-word;
+    color: #1a73e8;        /* цвет ссылок */
+    text-decoration: none; /* убрать подчеркивание */
+    font-weight: bold;
+}
+
+.info-text a:hover {
+    text-decoration: underline; /* при наведении подчеркивание */
 }
 
   </style>
